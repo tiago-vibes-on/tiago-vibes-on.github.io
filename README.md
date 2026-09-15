@@ -1,6 +1,6 @@
-# Tiago Vibes On
+# Tiago VibesOn
 
-Minimal technical blog and project index for the Hands-on series.
+Minimal technical blog and project index for the HandsOn series.
 
 ## Development
 

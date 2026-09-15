@@ -7,8 +7,8 @@ interface Props {
 }
 
 const {
-    title = "Tiago Vibes On",
-    description = "Hands-on backend engineering."
+    title = "Tiago VibesOn",
+    description = "HandsOn, helping the Hero Association."
 } = Astro.props;
 ---
 
@@ -23,9 +23,10 @@ const {
     </head>
     <body>
         <header class="site-header">
-            <a class="brand" href="/">Tiago Vibes On</a>
+            <a class="brand" href="/">Tiago VibesOn</a>
             <nav aria-label="Primary navigation">
                 <a href="/projects">Projects</a>
+                <a href="https://www.youtube.com/@TiagoVibesOn" rel="noreferrer">YouTube</a>
                 <a href="https://github.com/tiago-vibes-on" rel="noreferrer">GitHub</a>
             </nav>
         </header>
@@ -33,7 +34,7 @@ const {
             <slot />
         </main>
         <footer class="site-footer">
-            <span>Hands-on backend engineering.</span>
+            <span>HandsOn, helping the Hero Association.</span>
             <a href="https://github.com/tiago-vibes-on/hands-on" rel="noreferrer">Source code</a>
         </footer>
     </body>
