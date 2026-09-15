@@ -2,18 +2,14 @@
 import { getCollection } from "astro:content";
 import ProjectList from "../components/ProjectList.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/home.css";
 
 const projects = (await getCollection("projects"))
     .sort((first, second) => first.data.order - second.data.order);
 ---
 
 <BaseLayout>
-    <section class="hero">
-        <p class="eyebrow"><a href="https://www.youtube.com/@TiagoVibesOn">Tiago VibesOn</a></p>
-        <h1>HandsOn, helping the Hero Association.</h1>
-    </section>
-
-    <section class="content-section" aria-labelledby="hero-association">
+    <section class="content-section home-projects" aria-labelledby="hero-association">
         <div class="section-heading">
             <p class="eyebrow">Series</p>
             <h2 id="hero-association">Hero Association</h2>

@@ -1,0 +1,28 @@
+.site-identity {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    min-width: 0;
+}
+
+.tagline {
+    color: #6a6a64;
+    font-size: 0.78rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 48rem) {
+    .site-header {
+        align-items: flex-start;
+        padding: 1rem 0;
+    }
+
+    .site-identity {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .tagline {
+        white-space: normal;
+    }
+}

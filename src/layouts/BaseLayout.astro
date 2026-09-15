@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import "../styles/header.css";
 
 interface Props {
     title?: string;
@@ -23,7 +24,10 @@ const {
     </head>
     <body>
         <header class="site-header">
-            <a class="brand" href="/">Tiago VibesOn</a>
+            <div class="site-identity">
+                <a class="brand" href="/">Tiago VibesOn</a>
+                <span class="tagline">HandsOn, helping the Hero Association.</span>
+            </div>
             <nav aria-label="Primary navigation">
                 <a href="/projects">Projects</a>
                 <a href="https://github.com/tiago-vibes-on" rel="noreferrer">GitHub</a>
