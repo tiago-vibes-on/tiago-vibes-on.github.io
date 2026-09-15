@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import ProjectList from "../components/ProjectList.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const projects = (await getCollection("projects"))
+    .sort((first, second) => first.data.order - second.data.order);
+---
+
+<BaseLayout>
+    <section class="hero">
+        <p class="eyebrow">Tiago Vibes On</p>
+        <h1>Hands-on backend engineering.</h1>
+        <p class="lede">
+            Small projects that evolve through focused technical decisions: Java, Quarkus,
+            Docker, native images, and application architecture.
+        </p>
+    </section>
+
+    <section class="content-section" aria-labelledby="hero-association">
+        <div class="section-heading">
+            <p class="eyebrow">Series</p>
+            <h2 id="hero-association">Hero Association</h2>
+        </div>
+        <ProjectList {projects} />
+    </section>
+</BaseLayout>

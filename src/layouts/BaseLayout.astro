@@ -1,0 +1,40 @@
+---
+import "../styles/global.css";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const {
+    title = "Tiago Vibes On",
+    description = "Hands-on backend engineering."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content={description} />
+        <meta name="theme-color" content="#f7f7f2" />
+        <title>{title}</title>
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="brand" href="/">Tiago Vibes On</a>
+            <nav aria-label="Primary navigation">
+                <a href="/projects">Projects</a>
+                <a href="https://github.com/tiago-vibes-on" rel="noreferrer">GitHub</a>
+            </nav>
+        </header>
+        <main>
+            <slot />
+        </main>
+        <footer class="site-footer">
+            <span>Hands-on backend engineering.</span>
+            <a href="https://github.com/tiago-vibes-on/hands-on" rel="noreferrer">Source code</a>
+        </footer>
+    </body>
+</html>
