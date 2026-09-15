@@ -15,9 +15,9 @@ const { project } = Astro.props;
 const { Content } = await render(project);
 ---
 
-<BaseLayout title={`${project.data.title} | Tiago Vibes On`} description={project.data.description}>
+<BaseLayout title={`${project.data.title} | Tiago VibesOn`} description={project.data.description}>
     <article class="article">
-        <a class="back-link" href="/projects">← All projects</a>
+        <a class="back-link" href="/">← All projects</a>
         <p class="eyebrow">{project.data.series} · Project {project.data.order}</p>
         <h1>{project.data.title}</h1>
         <p class="lede">{project.data.description}</p>
