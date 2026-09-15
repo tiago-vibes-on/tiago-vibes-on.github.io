@@ -14,7 +14,7 @@ status: published
 
 ## Objective
 
-Keep the JVM as the default build, then make native compilation an intentional choice.
+Keep the JVM as the default build, and make native compilation optional.
 
 ## What changes
 
