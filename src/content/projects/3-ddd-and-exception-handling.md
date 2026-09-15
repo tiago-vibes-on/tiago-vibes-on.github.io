@@ -9,7 +9,7 @@ stack:
   - PostgreSQL
   - Docker
 repository: https://github.com/tiago-vibes-on/hands-on/tree/main/3-ddd-and-exception-handling
-status: in progress
+status: published
 ---
 
 ## Objective
