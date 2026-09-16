@@ -57,6 +57,19 @@ nav a,
     text-decoration: none;
 }
 
+nav .social-link {
+    display: grid;
+    width: 1.2rem;
+    height: 1.2rem;
+    place-items: center;
+}
+
+nav .social-link svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
 .hero {
     max-width: 48rem;
     padding: 8rem 0 6rem;
