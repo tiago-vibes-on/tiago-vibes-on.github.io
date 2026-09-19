@@ -1,28 +1,30 @@
 ---
 order: 1
 title: Containers
-description: Dockerize a small Quarkus service, then introduce PostgreSQL and a multi-stage JVM image.
+description: Build the Hero Association backend with PostgreSQL, Docker Compose, and a multi-stage JVM image.
 series: Hero Association
 stack:
   - Java 25
   - Quarkus
   - Docker
   - PostgreSQL
-repository: https://github.com/tiago-vibes-on/hands-on/tree/main/1-containers
-status: published
+repository: https://github.com/tiago-vibes-on/hands-on/tree/main/hero-association/backend
+status: in progress
 ---
 
 ## Objective
 
-Start with a small stateless service and evolve it into a PostgreSQL-backed API running with Docker Compose.
+Establish the PostgreSQL-backed Hero Association backend and its default JVM
+container workflow.
 
 ## What changes
 
-The initial checkpoint exposes a minimal service. The final checkpoint adds hero persistence, PostgreSQL, Docker Compose, and a multi-stage JVM image.
+The backend persists heroes in PostgreSQL, runs with Docker Compose, and uses a
+multi-stage JVM image by default.
 
 ## Run it
 
 ```bash
-cd 1-containers/final
+cd hero-association/backend
 docker compose up --build
 ```
